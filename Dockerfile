@@ -5,13 +5,13 @@ From golang:1.21 as base
 WORKDIR /app              
 
 # Copy all the dependencies require for the build
-COPY go.mod .
+COPY go.mod ./
 
 # download it i mean install it hear
 RUN go mod download
 
 # copy all the source code
-COPY ..
+COPY . .
 
 # run the build command
 RUN go build -o main .
