@@ -39,7 +39,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Run golangci-lint
-      uses: golangci/golangci-lint-action@v4 # Use v3 or the latest version that works
+      uses: golangci/golangci-lint-action@v1 # Use v3 or the latest version that works
       with:
         version: v1.56.2
 
