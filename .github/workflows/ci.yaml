@@ -32,18 +32,18 @@ jobs:
     - name: Test
       run: go test ./...
   
-  code-quality:
+   code-quality:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-    - name: Setup golangci-lint Action
-      uses: golangci/golangci-lint@v6
 
-
+    - name: Run golangci-lint
+      uses: golangci/golangci-lint-action@v3  # Use v3 or the latest version that works
       with:
-        version: v0.1.0
+        version: v1.56.2
+
 
 
   push:
