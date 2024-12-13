@@ -39,7 +39,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: Setup golangci-lint Action
-      uses: nickhstr/action-setup-golangci-lint@v0.1.0
+      uses: nickhstr/action-setup-golangci-lint
 
 
       with:
