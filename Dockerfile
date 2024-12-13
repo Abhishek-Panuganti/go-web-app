@@ -1,5 +1,5 @@
 # FROM golang:1.21 AS base is commonly used to set up a Go development environment in a Docker image.
-From golang:1.21 as base
+From golang:1.23 as base
 
 # create work directory in that below commands will be executed
 WORKDIR /app              
